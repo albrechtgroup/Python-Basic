@@ -30,6 +30,8 @@ print(i_am_None)
 print(type(i_am_None))
 # Output = NoneType
 
+
+##########################
 # String Manitpulation & Typecasting
 print("Hi" * 3)
 # Output = HiHiHi
@@ -41,7 +43,7 @@ text2 = "here"
 print(text1 + " " + text2)
 # Output = I am here
 print(text1, text2)
-# Same Output as above
+# Same Output as above, w/ spaces
 print(f'Hi, {text1} {text2}')
 # Output = Hi, I am here
 
@@ -111,7 +113,18 @@ print(text.isdigit())
 
 number = 5.32582
 number_int = int(number)
-# Output = 5
+print(number_int)
+# Output = 5, f.p.n. turned into integer
+
+number = 5
+number_float = float(number)
+print(number_float)
+# Output = 5.0, integer turned into 
+# a floating point number
+
+
+#########################
+# Data Structures
 
 
 
