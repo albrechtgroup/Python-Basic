@@ -43,7 +43,15 @@ text2 = "here"
 print(text1 + " " + text2)
 # Output = I am here
 print(text1, text2)
-# Same Output as above, w/ spaces
+# Same Output as above, when 
+# concatinating using the comma,
+# python auto adds the spaces
+
+# Python's f-strings
+print(f'Hello World')
+# Output = Hello World
+text1 = "I am"
+text2 = "here"
 print(f'Hi, {text1} {text2}')
 # Output = Hi, I am here
 
@@ -59,10 +67,13 @@ print(text[:4])
 print(text[-4:])
 # Output = Andy, -Negative numbers start 
 # string from the Right going Left
+# starting at -1, instead of 0
 
 name = "Hello, My name is Andy"
 print(name[18:22])
 # Output = Andy
+# Starting index is Inclusive,
+# while the ending index is Exclusive.
 print(name[6:])
 # Output = My name is Andy
 
@@ -71,10 +82,11 @@ text = "Please convert me to all uppercase"
 print(text.upper())
 # Output = PLEASE CONVERT ME TO ALL UPPERCASE
 # Does NOT Change the string, must save to a
-# new variable
+# new variable(below)
 upperText = text.upper()
 print(upperText)
-# Output is same
+# Output is same, and value of variable 
+# has been changed
 
 # Lowercase built-in function lower()
 
@@ -94,11 +106,13 @@ print(len(text))
 
 # strip() function to strip white space in
 # beggining and end of a string
+# lstrip() strip white space off front
+# rstrip() strip white space off right
 text = "    Strip both ends   "
 print(text.strip())
 # Output = Strip both ends
 
-# is Methods True or False
+# is Methods to check True or False
 #  isalnum() - is Every character alphanumeric
 #  isalpha() - is Every character alphabetic
 #  isdigit() - is Every character numeric
@@ -110,6 +124,9 @@ print(text.isalnum())
 # Output = True
 print(text.isdigit())
 # Output = False, no numbers
+
+# Typecasting allows you to convert one 
+# variable type to another.
 
 number = 5.32582
 number_int = int(number)
