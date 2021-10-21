@@ -9,9 +9,9 @@
 ##################
 
 # if else statement:
-myScore = 87
-passingScore = 90
-if myScore >= passingScore:
+my_score = 87
+passing_score = 90
+if my_score >= passing_score:
     print("Congradulations!")
     print("You have passed!!!")
 else:
@@ -32,17 +32,17 @@ print("Thank you for taking the exam.")
 # 4 spaces is common
 
 # if elif else statement:
-myScore = 89
-passingScore = 50
-creditScore = 70
-distinctionScore = 90
-if myScore >= distinctionScore:
+my_score = 89
+passing_score = 50
+credit_score = 70
+distinction_score = 90
+if my_score >= distinction_score:
     print("Congrats!")
     print("You have passed with DISTINCTION!")
-elif myScore >= creditScore:
+elif my_score >= credit_score:
     print("Congrats!")
     print("You have passed with CREDIT!")
-elif myScore >= passingScore:
+elif my_score >= passing_score:
     print("Congradulations!")
     print("You have passed!!!")
 else: 
@@ -51,19 +51,19 @@ else:
 print("Thank you for taking the exam.")
 
 # Nested if statements:
-myScore = 89
-passingScore = 50
-creditScore = 70
-distinctionScore = 90
-if myScore >= distinctionScore:
+my_score = 89
+passing_score = 50
+credit_score = 70
+distinction_score = 90
+if my_score >= distinction_score:
     print("Congrats!")
     print("You have passed with DISTINCTION!")
-elif myScore >= creditScore:
+elif my_score >= credit_score:
     print("Congrats!")
     print("You have passed with CREDIT!")
-    if myScore >= distinctionScore - 5:
+    if my_score >= distinction_score - 5:
         print("You are only 5 points from Distinction score!")
-elif myScore >= passingScore:
+elif my_score >= passing_score:
     print("Congrats!")
     print("You have passed!!!")
 else:
@@ -89,8 +89,8 @@ count = 1
 while count <= 10:
     print(count)
     count = count + 1
-    toExit = input("Enter e if you wish to exit.")
-    if toExit == "e":
+    to_exit = input("Enter e if you wish to exit.")
+    if to_exit == "e":
         break
 
 # 'break' and 'continue' are used Inside while
@@ -140,24 +140,24 @@ for count in range(10, 100):
 
 # loop within another loop:
 # also while loop in for, and reversed
-for countA in range(1, 4):
-    for countB in range(1, 4):
-        for countC in range(1, 4):
-            print(countA, countB, countC)
+for count_A in range(1, 4):
+    for count_B in range(1, 4):
+        for count_C in range(1, 4):
+            print(count_A, count_B, count_C)
 
 # Iterate a list using a for loop:
-studentList = ["Mary", "John", "Mike", "Alice"]
-for studentName in studentList:
-    print(studentName)
+student_list = ["Mary", "John", "Mike", "Alice"]
+for student_name in student_list:
+    print(student_name)
 # Each item inside studentList, will be 
 # stored into the variable studentName
 # and printed out, Voila!!
 
 # Iterate a list using a while loop:
-studentList = ["Mary", "John", "Mike", "Alice"]
+student_list = ["Mary", "John", "Mike", "Alice"]
 index = 0
-while index < len(studentList):
-    print(studentList[index])
+while index < len(student_list):
+    print(student_list[index])
     index += 1
  # Same Output as for loop above, each
  # name printed out seperately.

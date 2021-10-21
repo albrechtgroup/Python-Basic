@@ -191,13 +191,13 @@ this_is_a_tuple = ()
 #   dictionary = {}
 # Do not have index numbers, no order
 # key: value pairs, like objects in JS
-cityWeather = {"Singapore": 30, "Paris": 15, "Sydney": 19, "Tokyo": 15}
-cityWeather["Brooklyn"] = 77
+city_weather = {"Singapore": 30, "Paris": 15, "Sydney": 19, "Tokyo": 15}
+city_weather["Brooklyn"] = 77
 # to add to dictionary or change exist value
 # Output = {"Singapore": 30, "Paris": 15, "Sydney": 19, "Tokyo": 15, "Brooklyn": 77}
-del cityWeather["Singapore"]
+del city_weather["Singapore"]
 # Output = {"Parris": 15, etc} minus Singapore
-print(cityWeather["Brooklyn"])
+print(city_weather["Brooklyn"])
 # Output = 77
 
 #   set = {}
@@ -220,7 +220,7 @@ print(cityWeather["Brooklyn"])
 # / = divide
 # % = modulo- remainder after dividing 
 # ** = exponentiation- num1 to the power of
-# num2.
+#             num2.
 # // = floor- ignores decimals after division
 #             rounds down, 3.7 becomes 3
 # negative numbers will instead round up 
@@ -236,19 +236,19 @@ print(cityWeather["Brooklyn"])
 # //=
 # **=
 
-number2 = 5
-number2 += 3
-print(number2)
+number_2 = 5
+number_2 += 3
+print(number_2)
 # Output = 8
 
 # To assign multiple variable to multiple
 #  values at same time:
-num1, num2, text1 = 3, 7, "multiple assignment"
-print(num1)
+num_1, num_2, text_1 = 3, 7, "multiple assignment"
+print(num_1)
 # Output = 3
-print(num2)
+print(num_2)
 # Output = 7
-print(text1)
+print(text_1)
 # Output = "multiple assignments"
 
 # Comparison Operators:
@@ -263,9 +263,9 @@ print(text1)
 # and -Both sides compared must be true
 # or - One side or the other
 # not
-num1 = 3
-num2 = 7
-print(not num1 > num2)
+num_1 = 3
+num_2 = 7
+print(not num_1 > num_2)
 # Output = True, 3 is Not greater than 7,
 # but using 'not' make it the opposite.
 # Not false.
@@ -275,15 +275,15 @@ print(not num1 > num2)
 # is of a certain class or data type
 
 # is
-num1 = 13
-print(type(num1) is int)
+nu_1 = 13
+print(type(num_1) is int)
 # Output = True
-num2 = 11.3
-print(type(num2) is float)
+num_2 = 11.3
+print(type(num_2) is float)
 # Output = True
 
 # is not
-print(type(num2) is not str)
+print(type(num_2) is not str)
 # Output = True
 
 # Membership Operators:
@@ -291,16 +291,16 @@ print(type(num2) is not str)
 # sequence
 
 # in 
-text1 = "Hello World"
-text2 = "Hello"
-text3 = "hello"
-print(text2 in text1)
+text_1 = "Hello World"
+text_2 = "Hello"
+text_3 = "hello"
+print(text_2 in text_1)
 # Output = True, Hello is 'in' Hello World
 
 # not in
-print(text2 not in text1)
+print(text_2 not in text_1)
 # Output = False, Hello is 'in' Hello World
-print(text3 in text1)
+print(text_3 in text_1)
 # Output = False, lowercase hello is Not in
 
 # Rules of Operator Precedence
