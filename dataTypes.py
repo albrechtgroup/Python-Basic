@@ -1,9 +1,9 @@
-# Always remind ourselves that when coding,
-# less code = less places to make mistakes,
-# less places to make mistakes = less code
-# to debug, less code to debug = less code 
-# to read, and less code to read = that you 
-# can see the whole picture much clearer.
+""" Always remind ourselves that when coding,
+    less code = less places to make mistakes,
+    less places to make mistakes = less code
+    to debug, less code to debug = less code 
+    to read, and less code to read = that you 
+    can see the whole picture much clearer. """
 
 greeting = "Hello World"
 print(greeting)
@@ -13,7 +13,7 @@ num1 = 0
 bool1 = bool(num1)
 print(bool1)
 # Output = False, ONlY empty strings and 0
-#          are False
+#  are False
 
 # Example 2:
 num1 = 7
@@ -27,8 +27,8 @@ bool1 = bool(text1)
 print(bool1)
 # Output = True
 
-# Python keywork None is a null value
-# Data type of None is NoneType
+# Python keywork 'None' is a null value
+# Data type of 'None' is 'NoneType'
 
 # Example:
 i_am_None = None
@@ -40,7 +40,6 @@ print(type(i_am_None))
 
 ##########################
 # String Manitpulation & Typecasting
-##########################
 
 print("Hi" * 3)
 # Output = HiHiHi
@@ -53,8 +52,8 @@ print(text1 + " " + text2)
 # Output = I am here
 print(text1, text2)
 # Same Output as above, when 
-# concatinating using the comma,
-# python auto adds the spaces
+# 'Concatinating' using the comma,
+#  python auto adds the spaces
 
 # Python's f-strings
 print(f'Hello World')
@@ -98,6 +97,8 @@ print(upperText)
 # has been changed
 
 # Lowercase built-in function lower()
+lowerText = text.lower()
+print(lowerText)
 
 # count() function
 text = "Count the number of u's in me."
@@ -113,20 +114,21 @@ text = "What is the length of this text?"
 print(len(text))
 # Output = 31
 
-# strip() function to strip white space in
-# beggining and end of a string
-# lstrip() strip white space off front
-# rstrip() strip white space off right
-text = "    Strip both ends   "
+""" strip() function to strip white space in
+    beggining and end of a string
+    lstrip() strip white space off front
+    rstrip() strip white space off right """
+text = "    Strip both ends   "  
 print(text.strip())
 # Output = Strip both ends
 
-# is Methods to check True or False
-#  isalnum() - is Every character alphanumeric
-#  isalpha() - is Every character alphabetic
-#  isdigit() - is Every character numeric
-#  isupper() - is Every character uppercase
-#  islower() - is Every character lowercase
+""" 'is' Methods to check True or False
+    isalnum() - is Every character alphanumeric
+    isalpha() - is Every character alphabetic
+    isdigit() - is Every character numeric
+    isupper() - is Every character uppercase
+    islower() - is Every character lowercase """
+
 # Example:
 text = "abcdEf"
 print(text.isalnum())
@@ -151,14 +153,15 @@ print(number_float)
 
 #########################
 # Data Structures
-#########################
 
-# Basic Data structures:
-#   "strings"
-#   131 - numbers
-#   131.77 - floating point numbers
-#   True or False - booleans
+""" Basic Data structures:
+   "strings"
+   131 - numbers
+   131.77 - floating point numbers
+   True or False - booleans """
 
+
+##########################
 # Complex Data structures:
 
 #   list = [], Very similar to arrays in JS
@@ -180,13 +183,14 @@ print(fruits)
 # .split() will split a string into a list
 # .join() will join list items into a str
 
-#   tuple = ()
-# tuples are like lists, but cannot be 
-# changed
-# Advantage: python processes tuples much
-# faster than lists, also good for constant
-# large data that do Not want to change
-this_is_a_tuple = ()
+"""  tuple = ()
+    tuples are like lists, but cannot be 
+    changed
+    Advantage: python processes tuples much
+    aster than lists, also good for constant
+    large data that do Not want to change
+    this_is_a_tuple = () """
+
 
 #   dictionary = {}
 # Do not have index numbers, no order
@@ -201,40 +205,40 @@ print(city_weather["Brooklyn"])
 # Output = 77
 
 #   set = {}
-# Similar rules to dictionaries
-# does Not use key: value pairs
-# add() method to add to set
-# remove() method to remove from set
-# cannot be changed, must be removed, then
-# added
-# No duplicate values allowed in sets
+""" Similar rules to dictionaries
+     does Not use key: value pairs
+     add() method to add to set
+    remove() method to remove from set
+    cannot be changed, must be removed, then
+    added
+    No duplicate values allowed in sets """
+
 
 ##########################
-# Operators
-##########################
+# Operators:
 
 # Mathmatical Operators:
-# + = add
-# - = subtract
-# * = multiply
-# / = divide
-# % = modulo- remainder after dividing 
-# ** = exponentiation- num1 to the power of
-#             num2.
-# // = floor- ignores decimals after division
-#             rounds down, 3.7 becomes 3
-# negative numbers will instead round up 
-#             -3.7 becomes -4
+""" + = add
+    - = subtract
+    * = multiply
+    / = divide
+    % = modulo- remainder after dividing 
+    ** = exponentiation- num1 to the power of
+         num2.
+    // = floor- ignores decimals after division
+         rounds down, 3.7 becomes 3
+        negative numbers will instead round up 
+        -3.7 becomes -4 """
 
 # Assignment Operators:
-# =
-# +=
-# -=
-# *=
-# /=
-# %=
-# //=
-# **=
+"""  =
+    +=
+    -=
+    *=
+    /=
+    %=
+   //=
+   **= """
 
 number_2 = 5
 number_2 += 3
@@ -251,18 +255,19 @@ print(num_2)
 print(text_1)
 # Output = "multiple assignments"
 
-# Comparison Operators:
-# > greater than
-# < less than
-# == equal
-# != Not equal
-# >= greater than or equal to 
-# <= less than or equal to
+""" Comparison Operators:
+    > greater than
+    < less than
+    == equal
+    != Not equal
+    >= greater than or equal to 
+    <= less than or equal to """
 
 # Logical Operators:
 # and -Both sides compared must be true
 # or - One side or the other
-# not
+
+# 'not'
 num_1 = 3
 num_2 = 7
 print(not num_1 > num_2)
@@ -274,7 +279,7 @@ print(not num_1 > num_2)
 # Used to determine if a var or value
 # is of a certain class or data type
 
-# is
+# 'is'
 nu_1 = 13
 print(type(num_1) is int)
 # Output = True
@@ -282,7 +287,7 @@ num_2 = 11.3
 print(type(num_2) is float)
 # Output = True
 
-# is not
+# 'is not'
 print(type(num_2) is not str)
 # Output = True
 
@@ -290,31 +295,31 @@ print(type(num_2) is not str)
 # Use to check if a value is found within a
 # sequence
 
-# in 
+# 'in' 
 text_1 = "Hello World"
 text_2 = "Hello"
 text_3 = "hello"
 print(text_2 in text_1)
 # Output = True, Hello is 'in' Hello World
 
-# not in
+# 'not in'
 print(text_2 not in text_1)
 # Output = False, Hello is 'in' Hello World
 print(text_3 in text_1)
 # Output = False, lowercase hello is Not in
 
-# Rules of Operator Precedence
-# () parenthesis
-# ** exponentiation
-# +x, -x unary plus, unary minus
-# *, /, //, % multiplication, divisio,
-#             floor div, modulo
-# +, - addition, subtraction
-# ==,!=, >, >=, <. <=   comparisons, identity
-# is, is not, in, not in      membership
-# not  logical not
-# and  logical and
-# or   logical or   
+""" Rules of Operator Precedence
+    () parenthesis
+    ** exponentiation
+    +x, -x unary plus, unary minus
+    *, /, //, % multiplication, divisio,
+                floor div, modulo
+    +, - addition, subtraction
+    ==,!=, >, >=, <. <=   comparisons, identity
+    is, is not, in, not in      membership
+    not  logical not
+    and  logical and
+    or   logical or """
 
 
 
