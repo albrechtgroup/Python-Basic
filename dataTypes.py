@@ -29,7 +29,6 @@ print(bool1)
 
 # Python keywork 'None' is a null value
 # Data type of 'None' is 'NoneType'
-
 # Example:
 i_am_None = None
 print(i_am_None)
@@ -90,6 +89,7 @@ text = "Please convert me to all uppercase"
 print(text.upper())
 # Output = PLEASE CONVERT ME TO ALL UPPERCASE
 # Does NOT Change the string, must save to a
+
 # new variable(below)
 upperText = text.upper()
 print(upperText)
@@ -280,7 +280,7 @@ print(not num_1 > num_2)
 # is of a certain class or data type
 
 # 'is'
-nu_1 = 13
+num_1 = 13
 print(type(num_1) is int)
 # Output = True
 num_2 = 11.3
