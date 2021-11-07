@@ -183,8 +183,8 @@ print(fruits)
 # .split() will split a string into a list
 # .join() will join list items into a str
 
-"""  tuple = ()
-    tuples are like lists, but cannot be 
+#  tuple = ()
+""" tuples are like lists, but cannot be 
     changed
     Advantage: python processes tuples much
     aster than lists, also good for constant
